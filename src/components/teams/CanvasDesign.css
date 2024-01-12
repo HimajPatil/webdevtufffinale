@@ -1,0 +1,44 @@
+/* Add your CSS styles here */
+.canvas-container {
+  /* position: relative; */
+ 
+  height: 100%;
+  /* width: 24rem;
+    padding-top: 24rem; */
+  border-radius: 8px;
+  box-shadow: 0 2px 8px 0 rgba(63, 69, 81, 0.16);
+  will-change: transform;
+}
+
+.canvas-iframe {
+  position: absolute;
+  width: 100%;
+  /* height: 50%; */
+  height: 100%;
+  top: 0;
+  left: 0;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.canvas-link {
+  display: block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #333;
+  /* Adjust text color */
+  font-family: 'Montserrat', sans-serif;
+  /* Change font family */
+  transition: color 0.3s ease-in-out;
+
+  /* Hover effect */
+  &:hover {
+    color: #663066;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  /* Add responsive styles here */
+}

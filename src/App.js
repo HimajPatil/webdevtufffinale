@@ -8,7 +8,7 @@ import Gls from './components/gls/gls.jsx'
 import eventsData from './components/Events/data.js';
 import EventInfo from './components/Events/EventInfo.jsx';
 import Exhibition from './components/exhibition/exhibition.jsx';
-// import Team from './components/team/team'
+import Team from './components/teams/teams.jsx'
 import TandC from './components/rules/terms.jsx';
 import Privacy from './components/rules/privacy.jsx';
 import Hosp from './components/Hospitality/Hosp.jsx';
@@ -29,10 +29,12 @@ function App() {
         <Route exact path='/exhibition' element={<Exhibition />} />
         <Route exact path='/privacy' element={<Privacy />} />
         <Route exact path='/terms' element={<TandC />} />
+        <Route exact path='/teams' element={<Team />} />
         <Route exact path='/accommodation' element={<Hosp />} />
         <Route exact path='/sponsorships' element={<Appp />} />
         <Route exact path='/Contacts' element={<ContactPage />} />
         <Route exact path='/login' element={<Login />} />
+
 	{eventsData.map((e) => <Route exact path={'/events/' + e.title} element={<EventInfo title={e.title} imgname={e.imgname} eventDesc={e.description} link={e.reglink} docum={e.pdf} coordinator3={e.coordinator3} coordinator1={e.coordinator1} coordinator2={e.coordinator2} contact1={e.contact1} contact2={e.contact2} contact3={e.contact3} />} />)}
 
         <Route />
